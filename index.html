@@ -3,77 +3,105 @@
 
     <head>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="nandoztx — videogame, moto e café" />
+        <meta name="theme-color" content="#050507" />
+        <meta property="og:title" content="NANDOZTX" />
+        <meta property="og:description" content="videogame, moto e café" />
         <title>nandoztx</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Rajdhani:wght@400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+        <link href="css/cyberpunk.css" rel="stylesheet" />
+        <script src="js/main.js" defer></script>
     </head>
 
-    <body id="page-top">
+    <body id="home">
 
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-            <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="#page-top">home</a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    menu
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#about">sobre</a></li>
-                    </ul>
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="./subpagina/">subpagina</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        <a class="skip" href="#conteudo">pular para o conteúdo</a>
+        <div class="scanlines" aria-hidden="true"></div>
 
-        <!-- Masthead-->
-        <header class="masthead">
-            <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
-                <div class="d-flex justify-content-center">
-                    <div class="text-center">
-                        <h1 class="mx-auto my-0 text-uppercase">NANDOZTX</h1>
-                        <h2 class="text-white-50 mx-auto mt-2 mb-5">videogame, moto e cafe</h2>
-                        <a class="btn btn-primary" href="#about">sobre</a>
-                    </div>
-                </div>
+        <!-- Topbar HUD -->
+        <header class="topbar">
+            <div class="container">
+                <a class="brand" href="#home">NANDOZTX<span class="cursor">_</span></a>
+                <nav aria-label="principal">
+                    <a href="#home">//home</a>
+                    <a href="#sobre">//sobre</a>
+                    <a href="#status">//status</a>
+                </nav>
+                <span class="sys-status" aria-hidden="true">SYS.<span class="on">ONLINE</span> ▮▮▮▮▯</span>
             </div>
         </header>
 
-        <!-- About-->
-        <section class="about-section text-center" id="about">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-8">
-                        <h2 class="text-white mb-4">feito pra brincar</h2>
-                        <p class="text-white-50">
-                            Testando pagina do github, aparentemente eh maneira, mas nao da pra deixar o readme.md junto.
-                            <br/>
-                            Tema customizado <a href="https://startbootstrap.com/theme/grayscale/">GRAYSCALE</a>
-                            <br/>
-                            Ovos fritos, mimimi lalala
-                        </p>
+        <main id="conteudo">
+
+            <!-- Hero -->
+            <section class="hero">
+                <div class="hero-frame">
+                    <p class="hero-kicker">// inicializando_perfil.exe</p>
+                    <h1 class="glitch" data-text="NANDOZTX">NANDOZTX</h1>
+                    <h2 class="hero-sub">videogame<span class="sep">/</span>moto<span class="sep">/</span>café</h2>
+                    <span class="btn-wrap"><a class="btn-cyber" href="#sobre">acessar &gt;&gt;</a></span>
+                </div>
+            </section>
+
+            <!-- Sobre -->
+            <section class="panel" id="sobre">
+                <div class="container">
+                    <h2 class="section-title" data-tag="01">SOBRE</h2>
+                    <div class="terminal-wrap">
+                        <div class="terminal">
+                            <p><span class="prompt">&gt;</span> <span class="key">usuario:</span> nandoztx</p>
+                            <p><span class="prompt">&gt;</span> <span class="key">status:</span> feito pra brincar</p>
+                            <p><span class="prompt">&gt;</span> <span class="key">local:</span> night city (github pages)</p>
+                            <p><span class="prompt">&gt;</span> <span class="key">bio:</span> página pessoal de testes. ovos fritos, mimimi lalala.</p>
+                            <p><span class="comment">// tema: cyberpunk custom, sem framework</span></p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- Footer-->
-        <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; nandoztx 2023</div></footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+            <!-- Atributos -->
+            <section class="panel" id="status">
+                <div class="container">
+                    <h2 class="section-title" data-tag="02">ATRIBUTOS</h2>
+                    <div class="stats-grid">
+                        <div class="stat-card-wrap">
+                            <article class="stat-card" style="--lvl: 90%">
+                                <h3>VIDEOGAME</h3>
+                                <p class="stat-lvl">lvl <span class="val">90</span>/100</p>
+                                <div class="stat-bar" role="img" aria-label="nível 90 de 100"><div class="stat-bar-fill"></div></div>
+                                <p class="stat-flavor">grind diário. save constante.</p>
+                            </article>
+                        </div>
+                        <div class="stat-card-wrap">
+                            <article class="stat-card" style="--lvl: 75%">
+                                <h3>MOTO</h3>
+                                <p class="stat-lvl">lvl <span class="val">75</span>/100</p>
+                                <div class="stat-bar" role="img" aria-label="nível 75 de 100"><div class="stat-bar-fill"></div></div>
+                                <p class="stat-flavor">duas rodas &gt; quatro.</p>
+                            </article>
+                        </div>
+                        <div class="stat-card-wrap">
+                            <article class="stat-card" style="--lvl: 99%">
+                                <h3>CAFÉ</h3>
+                                <p class="stat-lvl">lvl <span class="val">99</span>/100</p>
+                                <div class="stat-bar" role="img" aria-label="nível 99 de 100"><div class="stat-bar-fill"></div></div>
+                                <p class="stat-flavor">combustível principal.</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">&copy; nandoztx 2023&ndash;2026 &middot; <span class="ver">v2.0.77</span></div>
+        </footer>
+
     </body>
 </html>
